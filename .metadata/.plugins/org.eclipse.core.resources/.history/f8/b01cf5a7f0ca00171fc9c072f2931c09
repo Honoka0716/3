@@ -1,0 +1,34 @@
+import java.awt.*;
+
+import java.awt.event.*;
+
+import javax.swing.JFrame;
+public class Chess extends JFrame{
+	ChessPad chesspad = new ChessPad();
+	Chess()
+	{
+		setVisible(true);
+		setLayout(null);
+		chesspad.setBounds(70,90,440,440);
+		
+		add(chesspad);
+		chesspad.setBounds(70,90,440,440);
+		
+		addWindowListener(new WindowAdapter()
+		{
+		public void windowClosing(WindowEvent e)
+		{
+		System.exit(0);
+		}
+		}
+		);
+		pack();
+		setSize(600,550);
+		
+		}
+		public static void main(String args[])
+		{
+		Chess chess = new Chess();
+		}
+	}
+

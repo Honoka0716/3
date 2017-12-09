@@ -1,0 +1,18 @@
+
+
+public class B {
+	public static double cosin(int x , int n) {
+		int num = 1 ; int den = 1; double sum = 0;
+		for(;n>0;n--) {
+			if(n%1==0) {
+				num*=n;
+				den*=x;
+				sum=sum+num/den;
+			}
+			
+		}return sum;
+	}
+	public static void mian(String[] args) {
+		System.out.println(cosin(2,4));
+	}
+}

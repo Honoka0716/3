@@ -1,0 +1,9 @@
+import java.awt.*;
+import javax.swing.*;
+public class FirstWin {
+	public static void main(String[] args) {
+		JFrame f = new JFrame("test");
+		f.setVisible(true);
+	}
+
+}

@@ -1,0 +1,37 @@
+/*
+ * 
+ * Author: Shangshang Han
+ */
+import java.io.*;
+import java.util.*;
+
+public class Solarsystem {
+	public static Random r = new Random(0);
+
+	public static void main(String[] args) {
+		
+		try {
+			int i = r.nextInt();
+			/*int die = r.nextInt(6) + 1;*/
+			double x = r.nextGaussian();
+			FileReader fr = new FileReader("solarsystem.txt");
+			Scanner s = new Scanner(fr);
+			while(s.hasNext()) {
+			for (i = 0;i < 5; i++) {
+				System.out.printf("%-23s",s.next());
+				
+			}
+			if(i==5) {
+				System.out.print(s.next() + "\n");
+			
+			}
+			
+			}
+			
+			fr.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

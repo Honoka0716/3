@@ -1,0 +1,15 @@
+
+public class FractionTest {
+	public static void main(String[] args) {
+		for(int i=1; i<3; i++) {
+			Fraction f1 = new Fraction(i,2);
+			Fraction f2 = new Fraction(i,3);
+			System.out.println(f1.add(f2));
+			System.out.println(f1.sub(f2));
+			System.out.println(f1.mult(f2));
+			System.out.println(f1.neg());
+			
+		}
+	}
+
+}

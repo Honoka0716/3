@@ -1,0 +1,34 @@
+
+public class FractionTest {
+private int num, den;
+	
+	public FractionTest() {
+		num = 0;  den = 1;
+	}
+	public FractionTest(int n, int d) { 
+		num = n; den = d;
+	}
+	void print() {
+		System.out.println(num + "/" + den);
+	}
+	
+	
+	FractionTest add(FractionTest right) {
+		FractionTest ans = new FractionTest();
+		ans.num = this.num * right.den + right.num*this.den;
+		ans.den = this.den * right.den;
+		return ans;
+	}
+	public static void main(String[] args) {
+		//for(int i=1; i<3; i++) {
+			FractionTest f1 = new FractionTest(1,2);
+			FractionTest f2 = new FractionTest(1,3);
+			System.out.println(f1.add(f2));
+			/*System.out.println(f1.sub(f2));
+			System.out.println(f1.mult(f2));
+			System.out.println(f1.neg());*/
+			
+		
+	}
+
+}

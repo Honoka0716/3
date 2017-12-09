@@ -1,0 +1,7 @@
+Name		Orbits	Mass	    Diam		Perihelion(m)	Aphelion(m)	
+Sun		    NaN	    1.9891e30	1.391684e9	0		        0		    
+Mercury	    Sun	    0.330e24	4.879e6		4.6e10		    6.98e10		
+Venus		Sun	    4.87e24		1.2104e7	1.075e11	    1.089e11	
+Earth		Sun	    5.97e24		1.2756e7	1.471e11	    1.521e11	
+Moon		Earth	0.073e24	3.475e6		0.363e9		    0.406e9		
+Mars		Sun	    0.642e24	6.792e7		2.066e11	    2.492e11		

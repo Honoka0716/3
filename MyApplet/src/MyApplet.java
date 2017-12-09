@@ -1,0 +1,18 @@
+
+
+import processing.core.*;
+
+public class MyApplet extends PApplet{
+	public void settings() {
+		size(800,800);
+	}
+	private int x,y;
+	public void draw() {
+		line(x,y,width/2,height/2);
+		x++;
+	}
+	public static void main(String[]args) {
+		 PApplet.main("processingWin.MyApplet");
+	}
+}
+
